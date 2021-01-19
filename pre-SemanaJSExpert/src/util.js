@@ -7,6 +7,10 @@ class Util {
     static formatCurrency(value) {
         return this.#defaultFormart.format(value)
     }
+    static unFormartCurrency(value) {
+        return Number(value.replace(/\D/g, '')) / 100;
+        
+    }
 }
 
 module.exports = Util
